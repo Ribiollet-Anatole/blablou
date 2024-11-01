@@ -1,0 +1,94 @@
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FF885B;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur blanc autour de tout le contenu principal */
+.white-box {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.quiz-title {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grille des questions */
+.quiz-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.quiz-card {
+    background-color: #E2D5C4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quiz-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quiz-card button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quiz-card button:first-of-type {
+    background-color: #7FC8A9; /* Vert clair pour Vrai */
+    color: #ffffff;
+}
+
+.quiz-card button:last-of-type {
+    background-color: #FF6B6B; /* Rouge clair pour Faux */
+    color: #ffffff;
+}
+
+/* Pop-up de réponse */
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.popup.correct {
+    background-color: #7FC8A9; /* Vert pour bonne réponse */
+    color: #ffffff;
+}
+
+.popup.wrong {
+    background-color: #FF6B6B; /* Rouge pour mauvaise réponse */
+    color: #ffffff;
+}

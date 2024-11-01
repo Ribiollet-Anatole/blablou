@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: #FF885B;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.white-box {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('images/Barcelone.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: #333;
+}
+
+
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.greeting {
+    font-family: 'Lilita One', cursive;
+    font-size: 24px;
+    color: #333;
+    text-shadow: 1px 1px 2px #FF885B;
+}
+
+.language img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #E2D5C4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    color: #333;
+}
+
+.greeting-card {
+    background-image: url('images/cafe.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.school-card {
+    background-image: url('images/crayon.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.discussion-card {
+    background-image: url('images/pa.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.flag-card {
+    padding: 10px;
+}
+
+.flag-card img {
+    width: 60%;
+    border-radius: 8px;
+}
+
+.welcome-card {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lesson-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styles responsives */
+@media (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

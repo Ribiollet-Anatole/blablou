@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blablou - Vrai ou Faux en Espagnol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Conteneur blanc autour de tout le contenu principal -->
+    <div class="white-box">
+        <div class="container">
+            <!-- Titre principal de la page -->
+            <h1 class="quiz-title">Quiz: dice si la pallabras es verdad or falsa</h1>
+            
+            <!-- Grille des questions -->
+            <div class="quiz-grid">
+                <!-- Exemple de question avec boutons Vrai et Faux -->
+                <div class="quiz-card">
+                    <p>vamos a la playa</p>
+                    <button onclick="checkAnswer(true, this)">Vrai</button>
+                    <button onclick="checkAnswer(false, this)">Faux</button>
+                </div>
+                
+                <div class="quiz-card">
+                    <p>mi abuela cocina un buen pouleto</p>
+                    <button onclick="checkAnswer(false, this)">Vrai</button>
+                    <button onclick="checkAnswer(true, this)">Faux</button>
+                </div>
+                
+                <div class="quiz-card">
+                    <p>El flamenco es un baile originario de Andalucía.</p>
+                    <button onclick="checkAnswer(true, this)">Vrai</button>
+                    <button onclick="checkAnswer(false, this)">Faux</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up pour les réponses -->
+    <div id="popup" class="popup">
+        <span id="popup-message"></span>
+    </div>
+
+    <!-- JavaScript pour la logique du quiz -->
+    <script src="script.js"></script>
+</body>
+</html>
